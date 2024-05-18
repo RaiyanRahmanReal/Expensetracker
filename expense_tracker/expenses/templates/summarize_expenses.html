@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<h2>Summarize Expenses</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in summary %}
+            <tr>
+                <td>{{ item.category__name }}</td>
+                <td>{{ item.total }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
